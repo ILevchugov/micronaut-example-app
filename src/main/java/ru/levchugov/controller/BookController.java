@@ -15,17 +15,14 @@ public class BookController {
 
     private final BookService bookService;
 
-
     @Get
     public HttpResponse<Iterable<Book>> allBooks() {
-        System.out.println("fsd");
         return HttpResponse.ok().body(bookService.findAll());
     }
 
     @Get("/{id}")
     public HttpResponse<Book> findBookById(@PathVariable long id) {
-        System.out.println("fsd");
-           return HttpResponse.ok().body(bookService.findById(id));
+        return HttpResponse.ok().body(bookService.findById(id));
     }
 
 }
