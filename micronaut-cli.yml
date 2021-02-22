@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: ru.levchugov
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [ annotation-api, app-name, data, data-jdbc, gradle, h2, http-client, java, java-application, jax-rs, jdbc-hikari, junit, readme, shade, slf4j-simple, tomcat-server, yaml ]
